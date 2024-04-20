@@ -8,12 +8,27 @@
       text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
       white-space: nowrap; /* Prevent the text from wrapping */
     }
+     #myParagraph {
+      width: 300px; /* Adjust the width as needed */
+    }
+  <script>
+    function addLineBreak() {
+      var paragraph = document.getElementById("myParagraph");
+      var text = paragraph.innerText;
+      var maxLength = 50; // Adjust the maximum length as needed
+      
+      if (text.length > maxLength) {
+        var newText = text.substring(0, maxLength) + "<br>" + text.substring(maxLength);
+        paragraph.innerHTML = newText;
+      }
+    }
   </style>
   <title> Estrada NCM110 </title>
 <h> This is a test for Fundamentals</h>
 <h1> Bigger
 </head>
-<body>
+<body onload="addLineBreak()">
+  <p id="myParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
   <table>
     <tr>
       <td> BP </td>
