@@ -1,6 +1,14 @@
 <DOCTYPE! HTML>
   <html>
 <head>
+  <style>
+    .limited-paragraph {
+      max-width: 400px; /* Adjust the value as needed */
+      overflow: hidden;
+      text-overflow: ellipsis; /* Add ellipsis (...) if the text overflows */
+      white-space: nowrap; /* Prevent the text from wrapping */
+    }
+  </style>
   <title>Fundamentals</title>
 <h> This is a test for Fundamentals</h>
 <h1> Bigger
@@ -17,8 +25,12 @@
       <td> 99 </td>
       <td> 20</td>
     </tr>
-    
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p class="limited-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
   </table>
+</body>
+</html>
+ 
 
 
   
